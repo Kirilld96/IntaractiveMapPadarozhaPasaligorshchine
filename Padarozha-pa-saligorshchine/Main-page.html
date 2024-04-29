@@ -1,0 +1,168 @@
+<!dOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body{
+    background-color: #eaeaea;
+}
+.navigation-panel{
+    background-color: rgba(234,234,234,255);
+    position: sticky;
+    top:0;
+    opacity: 70%;
+}
+#a1{
+    display: block;
+}
+.Back-cont{
+    display: flex;
+    justify-content: center;
+}
+a{
+    color:red;
+    text-decoration: none;
+    font-family: Oswald;
+    font-size:24pt;
+    margin-bottom:0.5rem;
+    }
+a:hover{
+    color: green;
+}
+    .karta{
+    display:none;
+    margin-left: 0.5rem;
+    height: 100rem;
+    }
+    #button2{
+        margin-right: 1rem;
+    }
+    button{
+    border-radius: 1rem;
+    display:block;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    display: inline-block;
+    }
+.container{
+    display:block;
+    width:50%
+}
+button{
+    width: 10rem;
+    height: 4rem;
+    font-size: 15pt;
+}
+button:hover{
+    color: white;
+    width: 10rem;
+    height: 4rem;
+    font-size: 15pt;
+    background-color: black;
+}
+li{
+    font-size: 14pt;
+}
+.button-cont1{
+    justify-content: end;
+}
+.marker-kalii{
+    list-style-image: url(img/Marker-kalii-removebg-preview.png);
+    margin-left: 2rem;
+}
+.marker-gorodPobratim{
+    list-style-image: url(img/Marker-gorodPobratim-removebg-preview\ —\ копия\ \(2\).png);
+}
+.marker-sport{
+    list-style-image: url(img/Marker-sport-removebg-preview-Photoroom.png-Photoroom\ —\ копия\ \(2\).png);
+   
+}
+.marker-WW2{
+    list-style-image: url(img/Marker-WW2-removebg-preview.png);
+}
+.legend-lists-container{
+    display: none;
+    justify-content: space-around;
+}
+.topOfThePageCont{
+   display: flex;
+   justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-container{
+    display: flex;
+    justify-content: center;
+}
+#navSvg{
+    float: right;
+    display: none;
+}
+</style>
+</head>
+<body>
+<div id="navPanel">
+<a name="begining-of-the-page"></a>
+<div class="navigation-panel">
+<div class="Back-cont">
+<a href='https://sites.google.com/view/padarozhapasaligorsku/беларусь-россия-единая-судьба' target='self'>Назад</a>
+</div>
+<div class="topOfThePageCont">
+    <a href="#begining-of-the-page" target="_self" id="a1">Перейти на начало страницы</a>
+</div>
+<div class="container-container">
+<div class="container">
+<div class="button-cont1">
+<button id="button1" onclick="appearMap('block')">Показать карту</button>
+<button id="button2" onclick="appearMap('none')">Скрыть карту</button>
+</div>
+<div class="button-cont2">
+<button id="button3" onclick="appearLegend('flex')">Показать легенду</button>
+<button id="button4" onclick="appearLegend('none')">Скрыть легенду</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="navSvg">
+    <button><img src="/img/GerbSoligorska.svg" alt="" class="svg"></button>
+</div>
+<div class="main">
+ <div class="legend-lists-container">
+    <div class="list-container-kalii">
+    <ul>
+<li class="marker-kalii">Памятный знак на месте, где было открыто месторождение калийной соли в 1949 году.</li>
+<li class="marker-kalii">Здесь берёт начало ПО «Беларуськалий».</li>
+<li class="marker-kalii">Академик Г.В.Богомолов.</li>
+<li class="marker-kalii">А.В.Селиванов , шахтопроходчик.</li>
+    </ul>
+</div>
+<div class="list-container-Pobratim">
+    <ul>
+<li class="marker-gorodPobratim">Города-побратимы.</li>
+    </ul>
+</div>
+<div class="list-container-sport">
+    <ul>
+<li class="marker-sport">Солигорск спортивный.</li>
+<li class="marker-sport">А.Н. Ракинцев. Футболист. Тренер. Комментатор.</li>
+    </ul>
+</div>
+<div class="list-container-WW2">
+    <ul>
+<li class="marker-WW2">.Партизанский аэродром, урочище Векерево.</li>
+<li class="marker-WW2">Герой Советского Союза  Д.Т.Гуляев.</li>
+<li class="marker-WW2">Герой Советского Союза Л.З.Муравицкий</li>
+<li class="marker-WW2">Памятник экипажу танка Т-34 в деревне Погост.</li>
+<li class="marker-WW2">Герой Советского Союза Е.К.Стемпковская</li>
+<li class="marker-WW2">Памятник братьям Цубам.</li>
+    </ul>
+</div>
+</div>
+<iframe class='karta' src="https://yandex.ru/map-widget/v1/?um=constructor%3A6b4099e93eb458887cab319b67b3a9e3b619fdfddb1ebb27f640682ae4b0d0cc&amp;source=constructor" width="99%" height="" frameborder="0"></iframe>   
+</div>
+</body>
+</html>
+<script src="Main-page-scripts.js"></script>
